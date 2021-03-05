@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Newsreader:wght@200&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 17px;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.banner {
+    background: url(../../images/banner.jpg) #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.banner__inner {
+    color: #fff;
+    font-family: 'Dancing Script', 'cursive';
+}
+
+.banner__inner h1 {
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 6px #000;
+}
+
+.banner__inner p {
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 6px #000;
+}
+
+.animation {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    /* Firefox */
+    -webkit-animation: fadein 5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 5s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
