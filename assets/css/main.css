@@ -229,6 +229,7 @@ font-size: 2em;
     letter-spacing: 0.325em;
 }
 
+/* animation for the header  */
 .animation {
 animation: fadein 5s;
 -moz-animation: fadein 5s;
@@ -313,7 +314,7 @@ animation: fadein 5s;
     position: relative;
     text-decoration: none;
     vertical-align: baseline;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em .75em;
     line-height: 85px;
     color: #EF6480;
 }
@@ -322,11 +323,72 @@ animation: fadein 5s;
     font-size: .5em;
 }
 
+/* transformation from brand icons to typed names in skills section */
 #html:hover span {display:none}
 #html:hover:before {
-    content:"html";
+    content:"HTML";
     font-size:.5em;
+    transform: translateY(-10px);
+    
 }
+
+#css:hover span {display: none}
+#css:hover:before {
+    content: "CSS";
+    font-size: .5em;
+    transform: translateY(-10px);
+}
+
+#javascript:hover span {display: none;}
+#javascript:hover::before {
+    content: "JavaScript";
+    font-size: .5em;
+    transform: translateY(-10px)
+}
+
+#jquery:hover span {display: none;}
+#jquery:hover::before {
+    content: "JQuery";
+    font-size: .5em;
+    transform: translateY(-10px);
+}
+
+
+#java:hover span {display: none;}
+#java:hover::before {
+    content: "Java";
+    font-size: .5em;
+    transform: translateY(-10px);
+}
+
+#reactjs:hover span {display: none;}
+#reactjs:hover::before {
+    content: "React.js";
+    font-size: .5em;
+    transform: translateY(-10px);
+}
+
+#python:hover span {display: none;}
+#python:hover::before {
+    content: "Python";
+    font-size: .5em;
+    transform: translateY(-10px);
+}
+
+#git:hover span {display: none;}
+#git:hover::before {
+    content: "Git";
+    font-size: .5em;
+    transform: translateY(-10px);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+/* removes border for hover effect. */
+.skills__icons span:hover{
+    border: none;
+}
+
   /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
