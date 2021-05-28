@@ -398,6 +398,7 @@ animation: fadein 5s;
 .projects__items{
     display: flex;
     justify-content: space-around;
+    width: 50%;
 }
 
 .projects__items .item{
@@ -407,6 +408,21 @@ animation: fadein 5s;
 
 .projects__items .item a img{
     width: 100%;
+}
+
+/* Sets padding of the actions ul to 0 getting rid of the default spacing effecting the link within*/
+
+.actions{
+    padding:0;
+}
+
+
+.actions li a{
+    text-decoration: none;
+    cursor: pointer;  
+    color: #ef6480;
+    font-family: 'FontAwesome';
+  
 }
   /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
