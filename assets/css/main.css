@@ -133,7 +133,7 @@ ul {
 
 }
 
-.icons li a{
+.banner .icons li a{
     text-decoration: none;
     cursor: pointer;
     text-shadow: 2px 2px 6px #000;
@@ -185,19 +185,6 @@ ul {
     text-align: center;
 }
 
-/* .introduction__items p {
-    font-size: .75em;
-    line-height: 1.5em;
-    letter-spacing: .01em;
-    margin: 0 0 2em 0;
-    vertical-align: baseline;
-    padding: 0;
-    border: 0;
-} */
-/*
-.introduction__items h2 p {}
-
-.introduction__items span {} */
 
 .introduction__items a {
     font-size: 0.8em;
@@ -423,6 +410,37 @@ animation: fadein 5s;
     color: #ef6480;
     font-family: 'FontAwesome';
   
+}
+
+/* code for fancy fading hr */
+.footer__hr{
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(239, 100, 128, 0.75), rgba(0, 0, 0, 0));
+    margin: 10% 0 5% 0;
+}
+
+.footer{
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer .icons{
+    display: flex;
+    list-style: none;
+}
+
+.footer .icons li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ef6480;
+    font-family: 'FontAwesome';
+    margin: 50px;
 }
   /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
