@@ -9,6 +9,7 @@
 
 html {
     font-size: 17px;
+    /* scroll-behavior: smooth; */
 }
 
 @media (max-width: 900px) {
@@ -137,6 +138,16 @@ ul {
     cursor: pointer;
     text-shadow: 2px 2px 6px #000;
     color: #fff;
+    font-family: 'FontAwesome';
+    margin: 50px;
+
+}
+
+.banner .icons li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 2px 2px 6px #000;
+    color: #EF6480;
     font-family: 'FontAwesome';
     margin: 50px;
 
@@ -394,6 +405,11 @@ animation: fadein 5s;
 
 .projects__items .item a img{
     width: 100%;
+}
+
+.projects__items .item a img:hover{
+    opacity: 0.5;
+    background-color: #000;
 }
 
 /* Sets padding of the actions ul to 0 getting rid of the default spacing effecting the link within*/
